@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Lavishly+Yours&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100px;
+    background-image:url(/Css-task/registor/wp9764009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.registor{
+    /* border: 2px solid ; */
+    margin: 90px 400px 80px 700px  ;
+    padding: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 5px 1px 8px 1px    whitesmoke;
+}
+.input-box{
+    /* border: 1PX solid; */
+    padding: 5px;
+    background-image: linear-gradient( rgb(220, 243, 229),rgb(236, 229, 229), rgb(80, 30, 30));
+    color: transparent;
+    background-clip: text;
+    text-transform: capitalize;
+     /* font-family: "Carattere", cursive; */
+    text-shadow: 1.5px 2px 4px gray;
+    font-size: 20px;
+    text-decoration-thickness:20px;
+}
+.input-box input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align-last:center;
+    font-size: 15px;
+    box-shadow: 0px 4px 7px ;
+}
+.input-box input:hover{
+     box-shadow: 0px 4px 7px wheat;
+}
+
+.input-box button{
+    margin: 1px 20px 1px 80px;
+    padding: 5px 38px ;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(75, 147, 206),rgb(158, 163, 158));
+    font-style: italic;
+}

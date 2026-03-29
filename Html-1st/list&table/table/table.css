@@ -1,0 +1,26 @@
+.sub{
+    background-image: linear-gradient(to top right,red,blue);
+    border-radius: 12%;
+}
+.bor{
+     background-image: linear-gradient(to top right,rgba(76, 145, 235, 0.514),blue);
+     
+}
+.sub{
+    background: linear-gradient(40deg,rgb(20, 228, 13),rgb(238, 8, 8));
+    color: transparent;
+    background-clip: text;
+}
+.sub1{
+     background: linear-gradient(40deg,rgb(12, 231, 31),rgb(195, 238, 4));
+    color: transparent;
+    background-clip: text;
+}
+
+#h2{
+    border-radius: 8%;
+}
+.su2{
+    height: 19px;
+ border-radius: 9%;
+}

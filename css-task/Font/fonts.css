@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Foldit:wght@100..900&family=Lavishly+Yours&family=Montez&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}  
+
+#god1{
+    height: 50px;
+    background: linear-gradient( green,red,blue,orange);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+  font-family: "Fleur De Leah", cursive;
+  font: size 900px;
+
+     
+}
+
+#god2{
+     height: 50px;
+    background:radial-gradient( green,red,blue,orange);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+      font-family: "Lavishly Yours", cursive;
+       font: size 900px;
+    
+}
+#god3{
+     height: 50px;
+    background: conic-gradient( rgb(100, 102, 119),rgb(138, 55, 55),rgba(196, 177, 192, 0.589),orange);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-family: "Foldit", sans-serif;
+    
+}
+#god4{
+     height: 50px;
+    background: linear-gradient( green,rgb(166, 240, 28));
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+     font-family: "Montez", cursive;
+}   
+.god5{
+     height: 50px;
+   background: linear-gradient(rgb(80, 85, 80),rgb(247, 6, 6),yellow);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}  
+
+.nith{
+    height: 200px;
+    width: 200px;
+    /* background:linear-gradient(to top right, green,yellow); */
+    background:repeating-linear-gradient(to top left, green,yellow);
+    border: 2px solid;
+    transition: 1s;
+    
+
+}
+.nith:hover{
+    border-radius: 55%;
+    transform: rotate(360deg);
+}
+.nith1{
+    height: 170px;
+    width: 170px;
+    background:radial-gradient(red 0% 20%,yellow 20% 40%,green 40% 60%,blue 60% 80% ,orange 80% 100%);
+    transition: 3s;
+}
+.nith1:hover{
+    border-radius: 45%;
+    transform: rotate(360deg);
+}
+.card{
+    border: 2px solid;
+    height: 159px;
+    width: 159px;
+    background: linear-gradient(to top right, red 0% 20%,yellow 20% 40%,green 40% 60%);
+    transition: 1.4s;
+}
+.card:hover{
+    border-radius: 15%;
+    transform:rotate(90deg);
+}
+.if{
+    background:linear-gradient(white,gray);
+    color: transparent;
+      background-clip: text;
+    
+
+}
+
+.img{
+    height: 500px;
+    width: 1700px;
+    background-image: url(/img/thumb-1920-1092853.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+
+.img1{
+    height: 1050px;
+    width: 1700px;
+    background-image: url(/img/Soothing-nature-backgrounds-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2{
+    height: 500px;
+    width: 1700px;
+    background-image: url(/img/thumb-1920-1092853.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;  
+}
+
+.img3{
+    height: 60vh;
+    width: 210vh;
+    background-image: url(/img/ncOaDB.webp);
+    background-size: cover;
+
+}
+
+

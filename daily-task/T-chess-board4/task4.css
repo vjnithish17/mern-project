@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-board{
+    border: 2px solid green;
+    height: 630px;
+    width: 720px;
+    margin: 1px auto;
+    position: relative;
+}
+.child{
+    border: 2px solid black;
+    height:90px;
+    width: 90px;
+    text-align: center;
+    font-size: 60px;
+       
+}
+.child1{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: aliceblue;
+}
+.child2{
+      position: absolute;
+    left: 90px;
+}
+.child3{
+      position: absolute;
+    left: 180px;
+    background-color: black;
+    color:white;
+}
+.child4{
+      position: absolute;
+    left: 270px;
+}
+.child5{
+      position: absolute;
+    left: 360px; 
+     background-color: black;
+    color:white;
+
+}
+.child6{
+      position: absolute;
+    right:0px;
+}
+.child7{
+      position: absolute;
+    right: 90px;
+      background-color: black;
+    color:white;
+}
+.child8{
+      position: absolute;
+    right:180px;
+}
+.child9{
+    position: absolute;
+    top: 90PX;
+    left: 90px; 
+     background-color: black;
+    color:white;
+}
+.child10{
+    position: absolute;
+    top: 90PX;
+    left: 180px;
+}
+.child11{
+    position: absolute;
+    top: 90PX;
+    left: 270px;
+      background-color: black;
+    color:white;
+}
+.child12{
+    position: absolute;
+    top: 90PX;
+    left: 360px;
+    
+}
+.child13{
+    position: absolute;
+    top: 90PX;
+    left: 450px;
+}
+.child14{
+    position: absolute;
+    top: 90PX;
+    right: 0px;
+      background-color: black;
+    color:white;
+}
+.child15{
+    position: absolute;
+    top: 90PX;
+    right: 90px;
+}
+.child16{
+    position: absolute;
+    top: 180PX;
+    left: 90px;
+}
+.child17{
+    position: absolute;
+    top: 180PX;
+    left: 180px;
+}
+.child18{
+    position: absolute;
+    top: 180PX;
+    left: 270px;
+}
+.child19{
+    position: absolute;
+    top: 180PX;
+    left: 360px;
+}
+.child20{
+    position: absolute;
+    top: 180PX;
+    left: 450px;
+}
+.child21{
+    position: absolute;
+    top: 180PX;
+    right: 0px;
+}
+.child22{
+    position: absolute;
+    top: 180PX;
+    right: 90px;
+}
+.child23{
+    position: absolute;
+    top: 270px;
+    left: 90px;
+}
+.child24{
+    position: absolute;
+    top: 270PX;
+    left: 180px;
+}
+.child25{
+    position: absolute;
+    top: 270PX;
+    left: 270px;
+}
+.child26{
+    position: absolute;
+    top: 270PX;
+    left: 360px;
+}
+.child27{
+    position: absolute;
+    top: 270PX;
+    left: 450px;
+}
+.child28{
+    position: absolute;
+    top: 270PX;
+    right: 0px;
+}
+.child29{
+    position: absolute;
+    top: 270PX;
+    right: 90px;
+}  
+.child30{
+    position: absolute;
+    bottom: 0;
+}  
+.child31{
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+}
+.child32{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+}
+.child33{
+    position: absolute;
+    bottom: 0;
+    left: 270px;
+}
+.child34{
+    position: absolute;
+    bottom: 0;
+    left: 360px;
+}
+.child35{
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+}
+.child36{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+.child37{
+    position: absolute;
+    bottom:0;
+    right: 90px;
+}
+.child38{
+    position: absolute;
+    bottom: 0;
+    right: 180px;
+}
+.child39{
+    position: absolute;
+    bottom: 90px;
+    left: 90px;
+}
+
+.child42{
+    position: absolute;
+    bottom: 90px;
+    left: 180px;
+}
+.child43{
+    position: absolute;
+    bottom: 90px;
+    left: 270px;
+}
+.child44{
+    position: absolute;
+    bottom: 90px;
+    left: 360px;
+}
+.child45{
+    position: absolute;
+    bottom:90px;
+    left: 450px;
+}
+.child46{
+    position: absolute;
+    bottom: 90px;
+    right: 0px;
+}
+.child47{
+    position: absolute;
+    bottom:90px;
+    right: 90px;
+}
+.child48{
+    position: absolute;
+    bottom: 90px;
+    right: 180px;
+}
+
+
+

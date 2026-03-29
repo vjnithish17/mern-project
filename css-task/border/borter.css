@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border {
+    margin: 30px;
+  
+}
+
+.box1 {
+    border: 2px solid rgb(241, 55, 22);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: yellow;
+    margin: 20px ;
+    padding: 3% 20% 1% 12%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: rgb(255, 0, 0);
+   
+}
+.box1:hover{
+     cursor:crosshair;
+}
+
+.box2 {
+    border: 10px outset red;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 60px;
+    /* font-weight: 180px; */
+    text-decoration-thickness: 90px;
+    /* color:yellow; */
+    margin: 20px;
+    padding: 58px;
+}
+
+.box3 {
+    border: 10px double blueviolet;
+    height: 200px;
+    width: 200px;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    padding: 80px;
+    color: aliceblue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: blueviolet;
+}
+
+.box4 {
+     /* border: 10px double rgb(43, 153, 226); */
+    height: 200px;
+    width: 300px;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    padding: 50px;
+    color: aliceblue;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: gray;
+}
+.box5{
+     border: 10px double rgb(43, 153, 226) blueviolet;
+    height: 100px;
+    width: 400px;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    /* padding: 80px; */
+    color: aliceblue;
+    background:linear-gradient(blueviolet, rgb(43, 153, 226));
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.box6{
+      /* border: 10px; */
+    height: 100px;
+    width: 400px;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    /* padding: 20px 40px 10px 40px; */
+    color: aliceblue;
+    background-color: rgba(74, 235, 101, 0.699);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}

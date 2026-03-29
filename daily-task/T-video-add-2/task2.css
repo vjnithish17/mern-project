@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Lavishly+Yours&family=Niconne&family=Nosifer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-box {
+    /* height: 200px;
+    width: 100%;
+    /* overflow: hidden; */
+     margin: 5px auto;
+    position: relative; 
+    
+}
+
+video {
+    /* border: 2px solid black; */
+    height: 99vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-family: "Nosifer", sans-serif;
+    background: linear-gradient(rgb(226, 22, 22), rgb(243, 243, 120), green , blue);
+    color: transparent;
+    background-clip: text;
+    font-weight: 300px;
+    font-size: 100px;
+    /* text-shadow: -7px -7px 20px gray; */
+    cursor: none;
+}

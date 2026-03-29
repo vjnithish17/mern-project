@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Lavishly+Yours&family=Niconne&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    height: 80vh;
+    background: linear-gradient(to top left,rgba(10, 40, 175, 0.884), rgba(8, 130, 230, 0.705), rgba(170, 205, 229, 0.623), rgb(25, 39, 231));
+    background-repeat: no-repeat;
+}
+.box1 {
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 500px;
+    margin: 9rem auto;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    /* box-shadow: inset 2px 8px 8px 12px black; */
+
+}
+img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    position: absolute;
+    cursor: cell;
+}
+.in-box {
+    /* border: 2px solid red; */
+    height: 200px;
+    width: 500px;
+    transition: 1s;
+    position: absolute;
+    backdrop-filter: blur(79px);
+}
+
+.in1 {
+    /* border: 2px solid red; */
+    bottom: 0px;
+}
+
+.in2 {
+    /* border: 2px solid red; */
+    top: 0px;
+}
+
+.box1:hover .in1 {
+    bottom: -200px;
+    cursor: pointer;
+}
+
+.box1:hover .in2 {
+    top: -200px;
+    cursor: pointer;
+} 
+.name{
+    position: absolute;
+    right: 180px;
+    bottom: 200px;
+    font-size: 50px;
+    /* text-decoration:underline whitesmoke; */
+     font-family: "Niconne", cursive;
+     background:linear-gradient(blue,rgba(235, 42, 42, 0.664));
+     color: transparent;
+     background-clip: text;
+     font-weight: 400;
+     text-shadow: -7px -1px 9px #ffffff3b, -7px -1px 9px gray;
+    cursor:none;
+    }

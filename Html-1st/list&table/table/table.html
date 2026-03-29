@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table</title>
+  <style>
+    table, th, td{
+        border: 2px solid chocolate;
+        border-collapse: collapse;
+    }
+  </style>
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <table style=border:1px; >
+    <thead>
+            <tr style="background-color: blanchedalmond;">
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </tr>
+    </thead >
+    <tbody style="border: 23px;">
+        <tr>
+            <td >data</td>
+            <td>cell</td>
+            <td rowspan="3">boss</td>
+        </tr>
+        <tr>
+               <td colspan="2">DAta </td>
+               
+         </tr>
+          
+         <tr>
+            <td>data</td>
+            <td>cell</td>
+        
+         </tr>
+        </tbody> 
+</table><br><br>
+<center >
+<fieldset class="bor"id="h2" style="border: 23%;width: 45px; ;">
+  <legend class="sub"> Nithish reg </legend>
+    <form action="" method="get" >
+        <label for="name"> first name</label>
+        <input type=text id="name" placeholder="firstname" required name="firstname"><br>
+        <label for="latst"> latest name</label>
+        <input class="su2" type="text" id="latst" placeholder="lastname" required name="lastname"><br>
+        <label for="mail">Email id</label>
+        <input type="email" id="mail" placeholder="email" required name="email"><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="password" required name="Password"><br>
+        <input class="sub1" type="submit" value="submit" name="submit">
+        
+      </form>
+
+    </fieldset>
+</center>
+</body>
+</html>

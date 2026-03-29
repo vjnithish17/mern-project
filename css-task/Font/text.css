@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Foldit:wght@100..900&family=Lavishly+Yours&family=Montez&display=swap');
+
+.t1 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: red;
+    text-shadow: 20px 9px 4px #686557;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 50px;
+    background-image: linear-gradient(red, blue, green);
+    color: transparent;
+    background-clip: text;
+}
+
+.text {
+    border: 1px solid;
+    height: 150px;
+    width: 400px;
+    box-shadow: 20px 15px 29px rgb(236, 175, 175);
+    background-color: rgb(213, 219, 159);
+
+}
+
+body {
+    background-image: url(/img/thumb-1920-1092853.jpg);
+}
+
+.t2 {
+    text-align:center;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 40px;
+    background-image:repeating-linear-gradient(to top right,rgb(218, 27, 154), rgb(228, 20, 13), rgb(87, 47, 231));
+    color: transparent;
+    background-clip: text;
+    font-family: "Montez", cursive;
+    text-shadow: 13px -6px 12px #0b3906;
+}
