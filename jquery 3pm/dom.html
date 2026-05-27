@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 
+           innerText , innerHTML , value 
+
+           set ,get method 
+           <p>hi</p>
+
+           default methods in jquery
+
+           get => text()
+           set => text("hi")
+
+           get => html()
+           set => html("hi")
+
+           get => val()
+           set => val("hi")
+
+
+           we will create ready method 
+
+read state function
+======================
+
+$(document).ready(function () { })
+
+in javascript => document.querySelector("#name")
+
+selector 
+id => $("#name").text() , $("#name").val() , $("#name").html()
+class => $(".name").text() , $(".name").val() , $(".name").html()
+
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test".
+
+$("p")
+$("#test")
+$(".test")
+
+text() - Sets or returns the text content of selected elements
+html() - Sets or returns the content of selected elements (including HTML markup)
+val() - Sets or returns the value of form fields
+
+        -->
+
+    <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet totam modi nisi nihil at consectetur
+        ab eaque sapiente suscipit, dignissimos culpa dolore. Atque provident quod esse obcaecati nihil? Ratione,
+        magnam.</p>
+
+    <h1 class="name">Naveen</h1>
+
+    <input type="text" value="Trichy" id="district" >
+
+
+
+    <div class="profile-info">
+        <h1>Naveen</h1>
+        <h2>Trichy</h2>
+        <h3>Tamilnadu</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, obcaecati.</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // get
+            // let para1 = $("#para1").text()
+            // console.log(para1);
+
+        //     let name = $(".name").text()
+        //         console.log(name);
+                
+            // let district =  $("#district").val()   
+
+            // console.log(district);
+
+        //    let pi =  $(".profile-info").text()
+
+        //    console.log(pi);
+
+        // let pi1 =  $(".profile-info").html()
+
+        //    console.log(pi1);
+
+        //    console.log($(".profile-info h2").text());
+        //    console.log($(".profile-info").text());
+
+        // set 
+        // debugger
+         $("#para1").text('Animations: Includes built-in methods for creating smooth visual effects, such as fading elements in and out or sliding them.')
+           
+           $("#district").val("Karur")  
+
+           $(".profile-info").html(`
+           <p>changed</p><h1>my native</h1>
+           `)
+            
+
+        })
+    </script>
+</body>
+
+</html>

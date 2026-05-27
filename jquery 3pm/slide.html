@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #flip,
+        #panel {
+            border: 2px solid;
+            padding: 10px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #panel {
+            height: 100vh;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+
+<button id="stop">stop</button>
+    <div id="flip">click here to slide </div>
+    <div id="panel">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum velit corrupti optio rem
+        repellendus libero nulla asperiores autem numquam, modi impedit, deserunt sint cum explicabo molestias!
+        Delectus, cum amet.</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            // $("#flip").on("click", () => {
+            //         $("#panel").slideDown()     
+            // })
+
+            // $("#flip").on("click", () => {
+            //         $("#panel").slideUp()     
+            // })
+
+            $("#flip").on("click", () => {
+                    $("#panel").slideToggle(5000)     
+            })
+
+            $("#stop").on("click",()=>{
+                    $("#panel").stop();
+            })
+
+        })
+    </script>
+</body>
+
+</html>

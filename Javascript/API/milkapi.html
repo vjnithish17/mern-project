@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Rate</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        select {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Today Milk Rate</h1>
+
+    <select id="districtSelect">
+        <option value="">Select District</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>District</th>
+                <th>Market</th>
+                <th>Commodity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script>
+
+        let userdata = [];
+
+        async function apicall() {
+
+            const res = await fetch(
+                "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd0000011deb07c95b934f6950b62a92e66e2d77&format=json&limit=100"
+            );
+
+            const data = await res.json();
+
+            console.log(data.records);
+
+            userdata = data.records;
+
+            loadDistrict();
+
+            showTable(userdata);
+
+        }
+
+        apicall();
+
+        function loadDistrict() {
+
+            let select = document.getElementById("districtSelect");
+
+            let districts = [...new Set(userdata.map(item => item.district))];
+
+            districts.forEach((district) => {
+
+                select.innerHTML += `
+                
+                    <option value="${district}">
+                        ${district}
+                    </option>
+                
+                `;
+
+            });
+
+        }
+
+        document.getElementById("districtSelect").addEventListener("change", function () {
+
+            let value = this.value;
+
+            let filterData = userdata.filter((item) => item.district == value);
+
+            showTable(filterData);
+
+        });
+
+        function showTable(data) {
+
+            let tableBody = document.getElementById("tableBody");
+
+            tableBody.innerHTML = "";
+
+            data.forEach((item) => {
+
+                tableBody.innerHTML += `
+                
+                    <tr>
+                        <td>${item.state}</td>
+                        <td>${item.district}</td>
+                        <td>${item.market}</td>
+                        <td>${item.commodity}</td>
+                        <td>${item.modal_price}</td>
+                    </tr>
+                
+                `;
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

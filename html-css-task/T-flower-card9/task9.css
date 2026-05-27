@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+body {
+    background: linear-gradient(rgba(128, 128, 128, 0.151));
+}
+
+header {
+    /* border: 2px solid; */
+    box-shadow: 0 0 15px rgb(142, 185, 228);
+    /* padding: 10px; */
+    position: relative;
+    background-color: rgba(20, 1, 63, 0.719);
+}
+
+.logo {
+    /* border: 2px solid; */
+    height: 55px;
+    width: 70px;
+}
+
+.logo img {
+    /* border: 2px solid; */
+    height: 55px;
+    width: 110px;
+    object-fit: fill;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+}
+
+nav a {
+    /* position: absolute; */
+    text-align: center;
+    font-weight: 600;
+    margin: 20px auto;
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(234, 234, 253);
+
+}
+
+.card {
+    /* border: 2px solid; */
+    height: 450px;
+    width: 300px;
+    margin: 20px 15px;
+    box-shadow: 8px 12px 4px 0px rgb(104, 98, 102);
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.main {
+    /* border:2px solid; */
+    height: 250px;
+    width: 300px;
+    /* margin: 10px auto; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.main img {
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.parent {
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    background-color:rgba(145, 144, 144, 0.041);
+    backdrop-filter: blur(10px);
+    transition: 1s;
+}
+.out1 {
+    /* border: 2px solid red; */
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    transition: 2s;
+    border-top-left-radius: 20px;
+}
+.out2 {
+    /* border: 2px solid green; */
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    transition: 2s;
+    border-top-right-radius: 20px;
+}
+.main:hover .out1 {
+    transform-origin: left;
+    transform: perspective(1000px) rotatey(-85deg);
+}
+
+ .main:hover .out2 {
+    transform-origin: right;
+    transform: perspective(1000px) rotatey(85deg);
+} 
+
+.card a {
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background: blueviolet;
+    text-align: center;
+    margin: 10px auto;
+    padding: 2px;
+    width: 180px;
+    display: block;
+}
+
+.card-foot {
+    padding: 8px;
+}
+
+.card-foot p {
+    text-indent: 40px;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.n1::after,
+.n1::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    /* border-radius: 20px; */
+    background: linear-gradient(95deg, rgba(255, 0, 0, 0.863), yellow, rgba(255, 0, 0, 0.863));
+    position: relative;
+    transition: 1s;
+}
+
+.n1::after {
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+}
+
+.n1::before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+
+}
+
+.n1:hover::after,
+.n1:hover::before {
+    width: 70px;
+    /* top: 0; */
+}
+
+.n2::after,
+.n2::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, blueviolet, rgb(43, 255, 0), yellow);
+    position: relative;
+    transition: 1s;
+}
+
+.n2::after {
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+}
+
+.n2::before {
+    position: absolute;
+    top: 0;
+    right: 280px;
+}
+
+.n2:hover::after,
+.n2:hover::before {
+    width: 70px;
+}
+
+.n3::after,
+.n3::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, rgb(43, 226, 150), rgb(255, 217, 0), orange);
+    position: relative;
+    transition: 1s;
+}
+
+.n3::after {
+    position: absolute;
+    top: 0;
+    left: 250px;
+}
+
+.n3::before {
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+.n3:hover::after,
+.n3:hover::before {
+    width: 70px;
+}
+
+.n4::after,
+.n4::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255), red);
+    position: relative;
+    transition: 1s;
+
+}
+
+.n4::after {
+    position: absolute;
+    top: 0;
+    left: 380px;
+}
+
+.n4::before {
+    position: absolute;
+    bottom: 0;
+    right: 29px;
+}
+
+.n4:hover::after,
+.n4:hover::before {
+    width: 70px;
+
+}

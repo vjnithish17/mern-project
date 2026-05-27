@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box {
+            border: 2px solid;
+            width: 50px;
+            height: 50px;
+            background-color: darkblue;
+            display: none;
+        }
+
+        .box1 {
+            background-color: darkcyan;
+        }
+
+        .box2 {
+            background-color: darkgreen;
+        }
+
+        .box3 {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+
+    <button id="fadein">fade in</button>
+    <button id="fadeout">fade out</button>
+    <button id="fadetoggle">fade toggle</button>
+    <button id="fadeto">fade To</button>
+
+
+     <script>
+        $(document).ready(function () {
+
+
+            $("#fadein").on("click", () => {
+
+                $(".box1").fadeIn()
+                $(".box2").fadeIn("slow")
+                $(".box3").fadeIn(5000)
+
+            })
+
+            $("#fadeout").on("click", () => {
+                $(".box1").fadeOut()
+                $(".box2").fadeOut("fast")
+                $(".box3").fadeOut(2000)
+            })
+
+            $("#fadetoggle").on("click", () => {
+
+                $(".box1").fadeToggle()
+                $(".box2").fadeToggle('fast')
+                $(".box3").fadeToggle(5000)
+            })
+
+            $("#fadeto").on("click", () => {
+                $(".box1").fadeTo('slow', 0.6)
+                $(".box2").fadeTo('slow', 0.1)
+                $(".box3").fadeTo('slow', 0.8)
+            })
+        })
+    </script>
+</body>
+
+</html>

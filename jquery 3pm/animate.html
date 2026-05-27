@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid;
+            width: 100px;
+            height: 100px;
+            background-color: darkcyan;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+ <button id="leftme">Left me</button>
+    <div class="box">
+
+    </div>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+
+            $("#leftme").on("click",()=>{
+                // $(".box").animate({
+                //     'left':'500px',
+                //     'top':'500px'
+                // })
+                // $(".box").animate({
+                //     'left':'500px',
+                //     'width':'150px',
+                //     'height':'150px'
+                // })
+                // $(".box").animate({
+                //     'left':'100px',
+                //     'width':'+=150px',
+                //     'height':'+=150px'
+                // })
+                // $(".box").animate({ 
+                //     // 'width':'toggle',
+                //     'height':'toggle'
+                // })
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

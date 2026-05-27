@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+
+    <!-- <div class="box">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+<span>Naveen</span>
+    <input type="text" id="uname" placeholder="enter name">
+    <button id="add">add Name</button>
+    <button id="after">after</button>
+    <button id="before">before</button>
+
+    <!-- <ul id="namelist">
+
+    </ul> -->
+
+    
+
+    <!-- <button id="text">append text</button> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+
+            $("#after").on("click",()=>{
+                let uname = $("#uname").val()
+                $("span").after(uname)
+            })
+
+            $("#before").on("click",()=>{
+                let uname = $("#uname").val()
+                $("span").before(uname)
+            })
+
+
+            $("#add").on("click", () => {
+                let uname = $("#uname").val()
+                 let list = `${uname}`
+                 $("span").append(list)
+            })
+
+            // $("#text").on('click', () => {
+
+            //     // $("h1").append("Nithis")
+
+            //     let a = "hi i am from trichy";
+            //     let para = `<p>${a}</p>`
+
+            //     $(".box").append(para)
+
+            //     // $(".box").prepend(a)
+            // })
+
+        })
+    </script>
+</body>
+
+</html>

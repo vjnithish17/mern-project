@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>To do list</h1>
+        <form action="" id="todoform" onsubmit="submitFun(event)">
+            <div class="form-control">
+                <label for="">Task Name</label>
+                <input type="text" id="task_name" placeholder="ex.john" required>
+                <span id="nameerr" class="error"></span>
+            </div>
+            <div class="form-control">
+                <label for="home">
+                    <input type="radio" id="home" class="group" name="work" required value="HOME_WORK">Home work</label>
+                <label for="office">
+                    <input type="radio" id="office" class="group" name="work" required value="OFFICE_WORK">OFFICE
+                    work</label>
+
+                <span id="nameerr" class="error"></span>
+            </div>
+            <div class="form-control">
+                <button type="submit">Add</button>
+
+            </div>
+        </form>
+        <h1>List</h1>
+        <div class="container">
+
+            <div class="taskbox">
+                <div class="box box1">
+                    <label for=""><input type="checkbox" name="" id="">task name</label>
+                </div>
+                <!-- <div class="box box2">
+                    <button type="button">delete</button>
+                    <button type="button">edit</button>
+                </div> -->
+            </div>
+            <script>
+                let tasklist = []
+                let submitFun = (event) => {
+                    event.preventDefault();
+                    let task_name = document.querySelector("#task_name").value
+                    let group = document.querySelector("input[name='work']:checked").value
+                    let task = {
+                        task_name,
+                        group
+                    }
+                    // console.log(task);
+                    tasklist.push(task)
+                    localStorage.setItem("tasklist", JSON.stringify(tasklist))
+                    showlist()
+                }
+                let showlist = () => {
+                    let tasklist = JSON.parse(localStorage.getItem("tasklist"))
+                    let list = ''
+                    tasklist.forEach((ele, idx) => {
+                        // console.log(ele);
+
+                        list += `
+                         <div class="taskbox">
+                         <div class="box box1">
+                              <label for=""><input type="checkbox" name="" id="">${ele.task_name}${ele.group}</label>
+                        </div>`
+                    });
+                    document.querySelector(".container").innerHTML = list
+                }
+                showlist()
+            </script>
+</body>
+
+</html>

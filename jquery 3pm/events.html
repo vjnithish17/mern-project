@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 
+       events
+       1. event method
+       2. on event
+       3. on multievent
+
+       1. click() , dblclick(), mouseenter() ,
+
+       2. addEventListern("click",()=>{}) ,  on("click",()=>{}) 
+    
+    -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit modi, veritatis obcaecati error rerum laudantium tempore eveniet. Ut minus dolore voluptatum officia consectetur quae harum rerum totam? Velit, officiis veritatis?</p>
+    <button id="btn">hide me</button>
+    <button id="showbtn">show me</button>
+    <button id="togglebtn">toggle me</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#btn").click(() => {
+                // alert("hi")
+                $("#btn").text("clicked me Naveen")
+            })
+            $("#btn").dblclick(() => {
+                // alert("hi")
+                $("#btn").text("click me")
+            })
+
+            $("#btn").mouseenter(() => {
+                console.log("mouse enter");
+                $("#btn").css('background-color', 'red')
+                
+            })
+
+            $("#btn").mouseleave(()=>{
+                $("#btn").css('background-color','white')
+            })
+
+            // on()
+
+            // single event display:none
+            $("#btn").on("click",()=>{
+                $("p").hide()
+            })
+
+            // // display:block
+            $("#showbtn").on("click",()=>{
+                $("p").show()
+            })
+
+            $("#togglebtn").on("click",()=>{
+                $("p").toggle()
+            })
+
+            // $("p").on("mouseenter",()=>{
+            //     $("p").css({
+            //         'color':'red'
+            //     })
+            // })
+
+
+            // $("p").on("mouseleave",()=>{
+            //     $("p").css({
+            //         'color':'black'
+            //     })
+            // })
+
+
+
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css('background-color','lightgray')
+                },
+                mouseleave: function(){
+                    $(this).css('background-color','lightgreen')
+                },
+                click: function(){
+                    $(this).css('background-color','yellow')
+                },
+            })
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    
+      css 
+
+      single property
+
+      $("p").css('color','red');
+
+      multiple property
+
+      $("#para").css({
+      'color':'red',
+      'background-color':'blue'
+      })
+    -->
+
+
+        <h1 id="district">Trichy </h1>
+        <p class="para">Lorem ipsum dolor sit amet. </p>
+        <p class="para">Lorem ipsum dolor sit amet. </p>
+        <p class="para">Lorem ipsum dolor sit amet. </p>
+        <p class="para">Lorem ipsum dolor sit amet. </p>
+
+
+        <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, eligendi.
+        </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#district").css('background-color','orange');
+
+            $(".para").css('background-color','yellow')
+
+
+            $(".box").css({
+                'border':'2px solid red',
+                 'width':'300px',
+                 'height':'300px',
+                'border-radius':'50%',
+                'display':'grid',
+                 'place-items':'center',
+                 'text-align':'center',
+                 'padding':'30px'
+            })
+
+        })
+    </script>
+</body>
+
+</html>

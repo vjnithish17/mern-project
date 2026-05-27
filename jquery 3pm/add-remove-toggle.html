@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <div class="box">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum neque veritatis asperiores? Qui, necessitatibus voluptate dolorum possimus odit culpa sunt ea cupiditate repudiandae laborum, quae molestias dolorem sed? Laborum, aliquam.
+  </div>
+
+  <button id="red">red</button>
+  <button id="removered">remove red</button>
+  <button id="toggle">toggle</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+
+            $("#red").on("click",()=>{
+                 $(".box").addClass("bg-red")
+            })
+
+            $("#removered").on("click",()=>{
+                $(".box").removeClass("bg-red")
+            })
+
+            $("#toggle").on("click",()=>{
+                $(".box").toggleClass("bg-red")
+            })
+        })
+    </script>
+</body>
+
+</html>
